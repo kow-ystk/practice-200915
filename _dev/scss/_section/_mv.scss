@@ -1,0 +1,15 @@
+@use '_foundation/mixin' as mixin;
+
+.mv {
+  height: 936px;
+  text-align: center;
+
+  @include mixin.mq(tablet){
+    height: mixin.get_vw(932, 1280);
+  }
+
+  @include mixin.mq(){
+    height: auto;
+  }
+
+}
