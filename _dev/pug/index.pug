@@ -1,0 +1,30 @@
+doctype html
+html(lang='ja')
+  head
+    block variable
+      -
+        $title = 'タイトル'
+        $meta = {
+          'description':'説明文',
+          'keywords':'',
+          'og': {
+            'title':'ogpタイトル',
+            'description':'ogp説明文',
+            'url':'',
+            'image':'',
+            'site_name':'サイト名'
+          }
+        }
+
+    block head
+      include _modules/_head.pug
+
+  body
+    main.main
+      div.main__inner
+        include _section/_mv.pug
+
+    block footer
+    include _modules/_footer.pug
+
+    include _modules/_script.pug

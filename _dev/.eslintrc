@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "jquery"
+  ],
+  "rules": {
+    "semi": "warn",
+    "no-mixed-operators": "warn",
+    "curly": "warn",
+    "quotes": ["warn", "single"],
+    "no-trailing-spaces": "warn"
+  }
+}

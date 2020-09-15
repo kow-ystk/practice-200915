@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: YuGothic, "Yu Gothic Medium", "Yu Gothic", sans-serif;
+  color: #333;
+  background: #fff;
+}
+
+// IEのフォントのみメイリオ指定
+@media all and (-ms-high-contrast: none) {
+  body {
+    font-family: "メイリオ", Meiryo, sans-serif;
+  }
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  outline:none;
+}
+
+button:focus {
+  outline:0;
+}
+
+ul {
+  list-style: none;
+}

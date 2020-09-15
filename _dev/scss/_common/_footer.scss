@@ -1,0 +1,29 @@
+@use '../_foundation/mixin' as mixin;
+
+.footer {
+  &__inner {
+    @include mixin.sectionWidth();
+
+    position: relative;
+    padding: 25px 0 23px;
+    font-size: 12px;
+    @include mixin.mq(){
+      padding: mixin.get_vw(13) 0 mixin.get_vw(15);
+      font-size: mixin.get_vw(12);
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include mixin.mq(){
+      position: initial;
+      margin-top: mixin.get_vw(10);
+      text-align: center;
+      transform: none;
+    }
+  }
+
+}
